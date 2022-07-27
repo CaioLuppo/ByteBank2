@@ -1,8 +1,7 @@
-import 'package:bytebank/screens/contacts_list.dart';
 import 'package:flutter/material.dart';
 
 // screens
-import 'screens/contacts_list.dart';
+import 'screens/dashboard.dart';
 
 
 void main() {
@@ -19,9 +18,13 @@ class ByteBank extends StatelessWidget {
       theme: ThemeData(
         colorSchemeSeed: Colors.green[900],
         brightness: Brightness.light,
+
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.blueAccent[700]
+        )
       ),
 
-      home: const ContactsList(),
+      home: const Dashboard(),
     );
   }
 }
