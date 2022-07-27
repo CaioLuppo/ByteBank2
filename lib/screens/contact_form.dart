@@ -53,7 +53,7 @@ class _NewContactState extends State<NewContact> {
                     final int? accountNumber = int.tryParse(_accountNumberController.text);
 
                     if (name != "" || accountNumber != null) {
-                      final Contact newContact = Contact(name, accountNumber);
+                      final Contact newContact = Contact(0, name, accountNumber);
                       Navigator.pop(context, newContact);
                     }
                   },
