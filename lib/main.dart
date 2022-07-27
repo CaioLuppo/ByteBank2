@@ -1,3 +1,4 @@
+import 'package:bytebank/screens/contact_form.dart';
 import 'package:flutter/material.dart';
 
 // screens
@@ -21,10 +22,16 @@ class ByteBank extends StatelessWidget {
 
         floatingActionButtonTheme: FloatingActionButtonThemeData(
           backgroundColor: Colors.blueAccent[700]
+        ),
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            primary: Colors.blueAccent[700],
+          ),
         )
       ),
 
-      home: const Dashboard(),
+      home: ContactForm(),
     );
   }
 }
