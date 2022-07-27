@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// screens
+import 'screens/dashboard.dart';
+
+
 void main() {
   runApp(const ByteBank());
 }
@@ -10,16 +14,13 @@ class ByteBank extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Dashboard"),
-        ),
-        body: Column(
-          children: <Widget>[
-            Image.asset("name")
-          ],
-        ),
+
+      theme: ThemeData(
+        colorSchemeSeed: Colors.green[900],
+        brightness: Brightness.light,
       ),
+
+      home: const Dashboard(),
     );
   }
 }
