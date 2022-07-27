@@ -1,4 +1,4 @@
-#Wed Jul 27 14:32:24 BRT 2022
+#Wed Jul 27 15:29:36 BRT 2022
 base.0=C\:\\Users\\caiol\\Desktop\\ByteBank\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
