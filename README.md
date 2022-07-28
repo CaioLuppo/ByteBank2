@@ -35,19 +35,19 @@ Trata-se de um gerenciador de contatos, onde o usuário pode criar contatos com 
   <tr>
     <td style="width:50%;">
       <h3>Lista de Contatos</h3>
-      <p style="text-align:left">Aqui o usuário se depara com o logo do banco e com o botão Contacts, que o leva para sua lista de contatos</p>
+      <p style="text-align:left">Nesta tela estarão disponíveis os contatos que o usuário adicionar, em forma de Cards.</p>
     </td>
     <th style="width:50%;">
-      <img src="github/dashboard.jpeg" style="width:70%;height:70%;">
+      <img src="github/contactList.jpeg" style="width:70%;height:70%;">
     </th>
   </tr>
   <tr>
     <td style="width:50%;">
       <h3>Criação de Contatos</h3>
-      <p style="text-align:left">Aqui o usuário se depara com o logo do banco e com o botão Contacts, que o leva para sua lista de contatos</p>
+      <p style="text-align:left">Esta é a tela de criação de contato, onde ao inserir o número da conta e o nome da pessoa, o cliente pode clicar no botão "Create" e finalizar a inserção do contato na lista.</p>
     </td>
     <th style="width:50%;">
-      <img src="github/dashboard.jpeg" style="width:70%;height:70%;">
+      <img src="github/newContact.jpeg" style="width:70%;height:70%;">
     </th>
   </tr>
 </table>
