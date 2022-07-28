@@ -2,9 +2,6 @@
 
 Projeto do ByteBank na Alura feito em **Flutter**, desta vez com **permanência de dados**.
 
-
-<br>
-
 ## Tabela de conteúdos
 
 <!--ts-->
