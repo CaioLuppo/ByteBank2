@@ -52,6 +52,9 @@ class _NewContactState extends State<NewContact> {
               child: SizedBox(
                 width: double.maxFinite,
                 child: ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Theme.of(context).colorScheme.secondary),
+                  ),
                   onPressed: (){
                     final String name = _nameController.text;
                     final int? accountNumber = int.tryParse(_accountNumberController.text);

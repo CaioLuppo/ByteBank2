@@ -6,6 +6,9 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final ColorScheme cores = Theme.of(context).colorScheme;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dashboard"),
@@ -25,7 +28,7 @@ class Dashboard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Material(
-              color: Theme.of(context).primaryColor,
+              color: cores.primary,
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(
@@ -41,16 +44,16 @@ class Dashboard extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(
                         Icons.people,
-                        color: Colors.white,
+                        color: cores.onPrimary,
                         size: 24,
                       ),
                       Text(
                         "Contacts",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: cores.onPrimary,
                           fontSize: 16.0,
                         ),
                       ),
