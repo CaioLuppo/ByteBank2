@@ -25,17 +25,22 @@ class Dashboard extends StatelessWidget {
           ),
 
           // Contatos
-          Row(
+          ListView(
+            scrollDirection: Axis.horizontal,
             children: [
-              _FeatureItem(
-                "Transfer",
-                Icons.monetization_on,
-                onClick: () => _showContactsList(context),
-              ),
-              _FeatureItem(
-                "Transaction Feed",
-                Icons.description,
-                onClick: () => debugPrint("Transaction feed was clicked"),
+              Row(
+                children: [
+                  _FeatureItem(
+                    "Transfer",
+                    Icons.monetization_on,
+                    onClick: () => _showContactsList(context),
+                  ),
+                  _FeatureItem(
+                    "Transaction Feed",
+                    Icons.description,
+                    onClick: () => debugPrint("Transaction feed was clicked"),
+                  ),
+                ],
               ),
             ],
           ),
