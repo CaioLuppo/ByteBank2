@@ -23,7 +23,7 @@ class _ContactsListState extends State<ContactsList> {
       ),
       body: FutureBuilder<List<Contact>>(
         initialData: const [],
-        future: _dao.findAll() as Future<List<Contact>>, // Executa a busca no banco de dados
+        future: _dao.findAll(), // Executa a busca no banco de dados
         builder: (context, snapshot){ // snapshot é o retorno do future escolhido
 
           switch(snapshot.connectionState){ // todos os estados do future
