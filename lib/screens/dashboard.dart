@@ -25,45 +25,79 @@ class Dashboard extends StatelessWidget {
           ),
 
           // Contatos
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Material(
-              color: cores.primary,
-              child: InkWell(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const ContactsList(),
-                    ),
-                  );
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(8.0),
-                  height: 100,
-                  width: 150,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Icon(
-                        Icons.people,
-                        color: cores.onPrimary,
-                        size: 24,
-                      ),
-                      Text(
-                        "Contacts",
-                        style: TextStyle(
-                          color: cores.onPrimary,
-                          fontSize: 16.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+          Row(
+            children: [
+              _FeatureItem(
+                "Transfer",
+                Icons.monetization_on,
+                onClick: () => _showContactsList(context),
               ),
-            ),
+              _FeatureItem(
+                "Transaction Feed",
+                Icons.description,
+                onClick: () => debugPrint("Transaction feed was clicked"),
+              ),
+            ],
           ),
         ],
+      ),
+    );
+  }
+
+  void _showContactsList(BuildContext context){
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const ContactsList(),
+      ),
+    );
+  }
+
+}
+
+class _FeatureItem extends StatelessWidget {
+
+  final String name;
+  final IconData icon;
+  final Function onClick;
+
+  const _FeatureItem(
+      this.name,
+      this.icon,
+      {required this.onClick});
+
+  @override
+  Widget build(BuildContext context) {
+    final ColorScheme cores = Theme.of(context).colorScheme;
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Material(
+        color: cores.primary,
+        child: InkWell(
+          onTap: () => onClick(),
+          child: Container(
+            padding: const EdgeInsets.all(8.0),
+            height: 100,
+            width: 150,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Icon(
+                  icon,
+                  color: cores.onPrimary,
+                  size: 24,
+                ),
+                Text(
+                  name,
+                  style: TextStyle(
+                    color: cores.onPrimary,
+                    fontSize: 16.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
