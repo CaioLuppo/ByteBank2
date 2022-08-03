@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import '../models/contact.dart';
 
 class ContactsList extends StatefulWidget {
-  const ContactsList({Key? key}) : super(key: key);
 
   @override
   State<ContactsList> createState() => _ContactsListState();
