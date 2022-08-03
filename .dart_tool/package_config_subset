@@ -1,7 +1,7 @@
 bytebank
 2.17
-file:///C:/Users/caiol/Desktop/ByteBank/
-file:///C:/Users/caiol/Desktop/ByteBank/lib/
+file:///C:/Users/caiol/Desktop/Apps/ByteBank/
+file:///C:/Users/caiol/Desktop/Apps/ByteBank/lib/
 archive
 2.12
 file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.1/
@@ -54,6 +54,14 @@ flutter_lints
 2.17
 file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/
 file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/lib/
+http
+2.14
+file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/
+file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib/
+http_parser
+2.12
+file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/
+file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/lib/
 image
 2.15
 file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.2.0/
