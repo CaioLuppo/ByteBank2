@@ -98,6 +98,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "http_interceptor",
+      "rootUri": "file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http_interceptor-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/caiol/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1",
       "packageUri": "lib/",
@@ -236,7 +242,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-08-03T00:38:07.172393Z",
+  "generated": "2022-08-09T19:04:28.465845Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }
