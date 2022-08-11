@@ -1,3 +1,4 @@
+import 'package:bytebank/components/centered_message.dart';
 import 'package:bytebank/components/loading.dart';
 import 'package:bytebank/web/webclient.dart';
 import 'package:flutter/material.dart';
@@ -54,10 +55,11 @@ class TransactionsList extends StatelessWidget {
                       },
                     );
                   }
+                  return CenteredMessage(message: "No transactions found!", icon: Icons.warning_amber,);
                 }
             }
 
-            return const Text("Unknown Error");
+            return CenteredMessage(message: "Unknown error");
           },
         )
     );
