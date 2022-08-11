@@ -1,3 +1,4 @@
+import 'package:bytebank/web/webclient.dart';
 import 'package:flutter/material.dart';
 
 import '../models/contact.dart';
@@ -60,6 +61,11 @@ class _TransactionFormState extends State<TransactionForm> {
                     child: const Text('Transfer'), onPressed: () {
                       final double? value = double.tryParse(_valueController.text);
                       final transactionCreated = Transaction(value!, widget.contact);
+                      save(transactionCreated).then((transactionRecieved) => {
+                        if(transactionCreated != null){
+                          Navigator.pop(context)
+                        }
+                      });
                   },
                   ),
                 ),
