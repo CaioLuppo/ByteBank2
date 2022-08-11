@@ -55,8 +55,11 @@ class TransactionsList extends StatelessWidget {
                       },
                     );
                   }
-                  return CenteredMessage(message: "No transactions found!", icon: Icons.warning_amber,);
                 }
+                return CenteredMessage(
+                  message: "No transactions found!",
+                  icon: Icons.warning,
+                );
             }
 
             return CenteredMessage(message: "Unknown error");
