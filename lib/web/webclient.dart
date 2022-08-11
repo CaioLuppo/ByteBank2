@@ -37,7 +37,7 @@ Future<List<Transaction>> findAll() async {
 
   // Endereço padrão da web API
   final Response response =
-      await client.get(toUri('http://192.168.15.12:8080/transactions'));
+      await client.get(Uri.parse('http://192.168.15.12:8080/transactions'));
   final List<dynamic> decodedJson =
       jsonDecode(response.body); // decodifica a string e retorna um dynamic
   final List<Transaction> transactions = [];
