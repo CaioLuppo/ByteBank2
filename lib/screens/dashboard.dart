@@ -1,15 +1,17 @@
+// Código autoral
+import 'package:bytebank/components/feature_item.dart';
 import 'package:bytebank/screens/contacts_list.dart';
 import 'package:bytebank/screens/transactions_list.dart';
+
+// Flutter e Plugins
 import 'package:flutter/material.dart';
 
+// Tela inicial
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
-    final ColorScheme cores = Theme.of(context).colorScheme;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dashboard"),
@@ -19,24 +21,24 @@ class Dashboard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start, // alinha itens X
 
         children: <Widget>[
-          // Imagem
+          // Logo
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset("images/bytebank_logo.png"),
           ),
 
-          // Contatos
+          // Lista de botões
           SizedBox(
             height: 120,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                _FeatureItem(
+                FeatureItem(
                   "Transfer",
                   Icons.monetization_on,
                   onClick: () => _showContactsList(context),
                 ),
-                _FeatureItem(
+                FeatureItem(
                   "Transaction Feed",
                   Icons.description,
                   onClick: () => _showTransactionsList(context),
@@ -49,7 +51,7 @@ class Dashboard extends StatelessWidget {
     );
   }
 
-  void _showContactsList(BuildContext context){
+  void _showContactsList(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => ContactsList(),
@@ -61,56 +63,6 @@ class Dashboard extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => TransactionsList(),
-      ),
-    );
-  }
-
-}
-
-class _FeatureItem extends StatelessWidget {
-
-  final String name;
-  final IconData icon;
-  final Function onClick;
-
-  const _FeatureItem(
-      this.name,
-      this.icon,
-      {required this.onClick});
-
-  @override
-  Widget build(BuildContext context) {
-    final ColorScheme cores = Theme.of(context).colorScheme;
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Material(
-        color: cores.primary,
-        child: InkWell(
-          onTap: () => onClick(),
-          child: Container(
-            padding: const EdgeInsets.all(8.0),
-            height: 100,
-            width: 150,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Icon(
-                  icon,
-                  color: cores.onPrimary,
-                  size: 24,
-                ),
-                Text(
-                  name,
-                  style: TextStyle(
-                    color: cores.onPrimary,
-                    fontSize: 16.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
       ),
     );
   }
