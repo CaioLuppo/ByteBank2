@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\caiol\\Desktop\\Apps\\ByteBank\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "A:\\caiol\\Documentos\\FlutterApps\\bytebank2\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\caiol\\Desktop\\Apps\\ByteBank\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "A:\\caiol\\Documentos\\FlutterApps\\bytebank2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

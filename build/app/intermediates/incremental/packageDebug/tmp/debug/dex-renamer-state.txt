@@ -1,4 +1,4 @@
-#Thu Aug 11 18:45:26 BRT 2022
-base.0=C\:\\Users\\caiol\\Desktop\\Apps\\ByteBank\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Aug 16 22:07:14 BRT 2022
+base.0=A\:\\caiol\\Documentos\\FlutterApps\\bytebank2\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
